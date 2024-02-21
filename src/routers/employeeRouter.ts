@@ -17,7 +17,7 @@ employeeRouter.post(
 		const { pin } = req.body;
 
 		if (pin !== process.env.PIN) {
-			res.status(401).send("not authorized" + `sent pin ${pin} is not correct pin ${process.env.PIN}`);
+			res.status(401).send("not authorized");
 		} else {
 			const employees: any = await employeeHandlers.getAllEmployees();
 			const employee = employees.find(

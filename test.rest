@@ -4,10 +4,10 @@
 GET {{url}}/employees
 
 ### SEND MAIL WITH SPECIFIC EMPLOYEE INFO
-POST {{url}}/employees/sendmail/7
+POST https://et394-render-test-of-nodemailer.onrender.com/employees/sendmail/3
 content-type: application/json
 
 {
-	"pin": "8877"
+	"pin": "2233"
 }
 	
