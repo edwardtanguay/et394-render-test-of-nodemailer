@@ -4,5 +4,10 @@
 GET {{url}}/employees
 
 ### SEND MAIL WITH SPECIFIC EMPLOYEE INFO
-GET {{url}}/employees/sendmail/3
+POST {{url}}/employees/sendmail/7
+content-type: application/json
+
+{
+	"pin": "8877"
+}
 	
